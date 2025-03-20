@@ -81,19 +81,6 @@ a {
     padding: 8px 14px;
 }
 
-/* .navbar ul a::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 14px;
-    bottom: 4px;
-    width: 26px;
-    height: 5px;
-    background-color: var(--primary-color);
-    border-radius: 999px;
-    visibility: hidden;
-} */
-
 .navbar ul a:hover {
     text-decoration: underline;
 }
@@ -122,6 +109,7 @@ a {
     color: #687690;
     font-size: 1.8;
     font-weight: 500;
+    line-height: 1.5;
     letter-spacing: 0.01em;
 }
 
@@ -177,15 +165,18 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 96px;
+    margin-top: 70px;
 }
 
-.clients .images img:hover {
-    /* width: 204px;
-    height: 91px; */
-    padding: 22px 41px;
+.clients .images a {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0 42px;
     border-radius: 12px;
-    background: #fff;
+}
+
+.clients .images a:hover {
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 

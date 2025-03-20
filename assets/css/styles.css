@@ -15,6 +15,11 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 /* ===== Common ===== */
 a {
     text-decoration: none;
@@ -66,7 +71,7 @@ a {
     /* padding-top: 130px; */
     position: relative;
     background: #e6f0ff;
-    height: 100vh;
+    height: calc(100vh - 90px);
 }
 
 .navbar {
@@ -195,6 +200,7 @@ a {
 .guides {
     margin-top: 40px;
     padding: 93px 0 70px;
+    scroll-margin-top: 3.5rem;
 }
 
 .guides .sub-title {
@@ -378,6 +384,7 @@ a {
 .stats {
     margin-top: 75px;
     padding: 50px 0;
+    scroll-margin-top: 5rem;
 }
 
 .stats .content {
@@ -535,6 +542,7 @@ a {
 
 .subscription {
     margin-top: 90px;
+    scroll-margin-top: 12rem;
 }
 
 .subscription .body {

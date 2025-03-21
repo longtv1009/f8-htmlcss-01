@@ -88,8 +88,23 @@ a {
     padding: 8px 14px;
 }
 
-.navbar ul a:hover {
-    text-decoration: underline;
+.navbar ul a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 6px;
+    width: 30px;
+    height: 2px;
+    background: #4f5361;
+    border-radius: 12px;
+    visibility: hidden;
+}
+
+.navbar ul a:hover::after {
+    /* text-decoration: underline; */
+    visibility: visible;
 }
 
 .navbar .action-link {
